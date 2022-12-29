@@ -1,3 +1,18 @@
+    local args = {
+    [1] = ";notice Must Equip Btools So It Work!"
+}
+wait(0)
+    local args = {
+    [1] = ";btools me"
+}
+wait(0)
+    local args = {
+    [1] = ";notice Loaded!"
+}
+wait(0)
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Admin Players Hub", "DarkTheme")
 local Tab = Window:NewTab("Player")
