@@ -6,8 +6,20 @@ wait(0)
 
 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
 wait(0)
+    local args = {
+    [1] = ";notice me You Must Equip Btools So It Work!"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(0)
+    local args = {
+    [1] = ";btools me"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(0)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Admin Remover HUB", "DarkTheme")
+local Window = Library.CreateLib("Admin Players Hub", "DarkTheme")
 local Tab = Window:NewTab("Player")
 local Section = Tab:NewSection("Select Player!")
 Plr = {}
@@ -23,6 +35,19 @@ local args = {
     [2] = {
         [1] = {
             ["Part"] = workspace.RankRemoverPads.Model.TouchPart,
+            ["CFrame"] = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+        }
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Building Tools").SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+end)
+Section:NewButton("Click To Give", "", function()
+local args = {
+    [1] = "SyncMove",
+    [2] = {
+        [1] = {
+            ["Part"] = workspace.RankGiverPads.Model.TouchPart,
             ["CFrame"] = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
         }
     }
