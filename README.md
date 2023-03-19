@@ -1,3 +1,5 @@
+print("Turtle Egg Screct - you stupid nigger - Don't Tell Anyone")
+wait(0)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Rank Controller [ HEHEHEHA ]", "Ocean")
 local Tab = Window:NewTab("Player")
