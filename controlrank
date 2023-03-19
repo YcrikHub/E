@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rank Controller [ UwU ]", "Ocean")
+local Window = Library.CreateLib("Rank Controller [ HEHEHEHA ]", "Ocean")
 local Tab = Window:NewTab("Player")
 local Section = Tab:NewSection("Select Player!")
 Plr = {}
@@ -10,6 +10,30 @@ local drop = Section:NewDropdown("Select Player!", "Click To Select", Plr, funct
    PlayerTP = t
 end)
 Section:NewButton("Click To Give", "", function()
+local toolName = "Building Tools"
+
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local tool = backpack:FindFirstChild(toolName) or character:FindFirstChild(toolName)
+
+if tool then
+    humanoid:EquipTool(tool)
+else
+    -- Create the message object
+local message = Instance.new("Message")
+message.Text = "YOU DON'T HAVE BUILDING TOOLS NIGGA GO FIND BUILDING TO OR ASK YOUR MOMMY FOR BUIILDING TOOLS"
+message.Parent = game.Workspace
+
+-- Wait for 3 seconds
+wait(5)
+
+-- Destroy the message object
+message:Destroy()
+end
+wait(0)
 local args = {
     [1] = "SyncMove",
     [2] = {
@@ -59,6 +83,30 @@ local args = {
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Building Tools").SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
 end)
 Section:NewButton("Click To Remove", "", function()
+local toolName = "Building Tools"
+
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local tool = backpack:FindFirstChild(toolName) or character:FindFirstChild(toolName)
+
+if tool then
+    humanoid:EquipTool(tool)
+else
+    -- Create the message object
+local message = Instance.new("Message")
+message.Text = "YOU DON'T HAVE BUILDING TOOLS NIGGA GO FIND BUILDING TO OR ASK YOUR MOMMY FOR BUIILDING TOOLS"
+message.Parent = game.Workspace
+
+-- Wait for 3 seconds
+wait(5)
+
+-- Destroy the message object
+message:Destroy()
+end
+wait(0)
 local args = {
     [1] = "SyncMove",
     [2] = {
@@ -109,7 +157,7 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Building Tools"
 end)
 
 
-Section:NewButton("Btools","Refresh Dropdown", function()
+Section:NewButton("Btools","give btools", function()
 local args = {
     [1] = ";btools"
 }
