@@ -1,0 +1,261 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TurtleEGG HUB [ SHAZAM!  ]", "Ocean")
+local Tab = Window:NewTab("Main Commands")
+local Tab1 = Window:NewTab("Music")
+local Tab2 = Window:NewTab("Mods")
+local Tab3 = Window:NewTab("Message")
+local Tab4 = Window:NewTab("Settings")
+local Tab5 = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Main [ SET PREFIX TO ; SO IT WORKING ]")
+local Section1 = Tab1:NewSection("Music")
+local Section2 = Tab2:NewSection("Mods")
+local Section3 = Tab3:NewSection("Message")
+local Section4 = Tab4:NewSection("Settings")
+local Section5 = Tab5:NewSection("Teleport Player")
+local Section6 = Tab5:NewSection("Teleport")
+Section6:NewButton("Get Admin", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").RankGiverPads.Model.TouchPart.CFrame
+end)
+Section6:NewButton("Finish The Game", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.Checkpoint.CFrame
+end)
+Section6:NewButton("Tp To Starter", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.SpawnLocation.CFrame
+end)
+Section6:NewButton("Gear Board", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.X.Part.CFrame
+end)
+Section:NewButton("fly", "ButtonInfo", function()
+    local args = {
+    [1] = ";fly"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("btools", "ButtonInfo", function()
+    local args = {
+    [1] = ";btools"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("fog", "ButtonInfo", function()
+    local args = {
+    [1] = ";fogend"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("kill", "ButtonInfo", function()
+    local args = {
+    [1] = ";kill others"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("spin", "ButtonInfo", function()
+    local args = {
+    [1] = ";spin others 666"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("explode", "ButtonInfo", function()
+    local args = {
+    [1] = ";explode others"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("jail", "ButtonInfo", function()
+    local args = {
+    [1] = ";jail others"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("disco", "ButtonInfo", function()
+    local args = {
+    [1] = ";disco"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("mute", "ButtonInfo", function()
+    local args = {
+    [1] = ";mute others"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("project cmdbar2", "ButtonInfo", function()
+    local args = {
+    [1] = ";uncmdbar2 others"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("fling", "ButtonInfo", function()
+    local args = {
+    [1] = ";fling"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("fog color", "ButtonInfo", function()
+    local args = {
+    [1] = ";fogcolor red"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("title", "ButtonInfo", function()
+    local args = {
+    [1] = ";titler all T̸͎͒ú̸͙r̴̤͝t̵̢̊l̸̼̏e̷̟̐Ë̸̪́g̵̤̀g̷̘̃"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("notice", "ButtonInfo", function()
+    local args = {
+    [1] = ";notice all NUKED"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section1:NewButton("music 1", "ButtonInfo", function()
+    local args = {
+    [1] = ";music 1427189017"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section1:NewButton("nyan cat", "ButtonInfo", function()
+    local args = {
+    [1] = ";music 5008970630"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section1:NewButton("music 2", "ButtonInfo", function()
+    local args = {
+    [1] = ";music 2006547142"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section1:NewButton("music window xp", "ButtonInfo", function()
+    local args = {
+    [1] = ";music 1107208252"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section1:NewButton("volume", "ButtonInfo", function()
+    local args = {
+    [1] = ";volume 9999999999"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("leader 66", "ButtonInfo", function()
+    local args = {
+    [1] = ";change all seconds 66666666"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("time", "ButtonInfo", function()
+    local args = {
+    [1] = ";time 0"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("serverhint", "ButtonInfo", function()
+    local args = {
+    [1] = ";serverhint NUKED LOL"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("alert", "ButtonInfo", function()
+    local args = {
+    [1] = ";alert all NUKED LOL"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("server message", "ButtonInfo", function()
+    local args = {
+    [1] = ";sm NUKED LOL"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("Talk", "ButtonInfo", function()
+    local args = {
+    [1] = ";talk all Nuked By TurtleEGG!"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("FREE ROBUX", "ButtonInfo", function()
+    local args = {
+    [1] = ";talk all FREE BOBUX HERE 😳 > bloxfake.com.hax "
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section3:NewButton("SCAM", "ButtonInfo", function()
+    local args = {
+    [1] = ";privatemessage all Enter Your Pass To Get Admin!"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("loopkill", "ButtonInfo", function()
+    local args = {
+    [1] = ";loopkill others"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section:NewButton("blur", "ButtonInfo", function()
+    local args = {
+    [1] = ";blur others 999999"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end)
+Section2:NewButton("inf yeild", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section2:NewSlider("SliderText", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section4:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+Plr = {}
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(Plr,v.Name) 
+end
+local drop = Section5:NewDropdown("Select Player!", "Click To Select", Plr, function(t)
+   PlayerTP = t
+end)
+Section5:NewButton("Teleport!", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end)
+Section5:NewToggle("Loop Teleport", "", function(t)
+_G.TPPlayer = t
+while _G.TPPlayer do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end
+end)
+Section5:NewButton("Teleport!", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end)
+Section6:NewButton("Bring Admin Pad", "", function()
+game:GetService("Workspace").RankGiverPads.Model.TouchPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end)
