@@ -109,6 +109,10 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Building Tools"
 end)
 
 
-Section:NewButton("Refresh Dropdown","Refresh Dropdown", function()
-  drop:Refresh(Plr)
+Section:NewButton("Btools","Refresh Dropdown", function()
+local args = {
+    [1] = ";btools"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
 end)
